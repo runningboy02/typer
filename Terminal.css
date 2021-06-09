@@ -1,0 +1,10 @@
+@font-face {
+    src: url("Terminal.ttf");
+    font-family: "jua"
+}
+
+body {
+    background-color: #141414;
+    font-family: "jua";
+    color: #2F7329;
+}
