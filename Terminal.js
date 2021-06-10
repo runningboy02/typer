@@ -1,8 +1,7 @@
 window.addEventListener("keydown", e => {
     if (count < codes.length) {
         var code = codes[count]
-        pop.push(code);
-        document.getElementById('Terminal').innerHTML = (pop);
+        document.getElementById('Terminal').innerHTML = (code);
         location.href = "#scrollbottom";
         count++;
     } else {
@@ -10,8 +9,6 @@ window.addEventListener("keydown", e => {
     }
 });
 var count = 0;
-
-var pop = [];
 
 var codes = [
     "struct group_info init_groups = { .usage = ATOMIC_INIT(2) };", "struct group_info *groups_alloc(int gidsetsize){", "struct group_info *group_info;", "int nblocks;", "int i;",
