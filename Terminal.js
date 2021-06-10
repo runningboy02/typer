@@ -8,6 +8,9 @@ window.addEventListener("keydown", e => {
         setTimeout(function () {
             document.getElementById('Terminal').innerHTML = "This is Hacking code<br>being hacked";
         }, 3000);
+        setTimeout(function () {
+            document.getElementById('Terminal').innerHTML = "End hacking!";
+        }, 3000);
     }
     if (count < codes.length && co < 10 && co > 0) {
         location.href = "#sb";
