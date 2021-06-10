@@ -7,9 +7,21 @@ window.addEventListener("keydown", e => {
         document.getElementById('Terminal').innerHTML = "<font size=10px>Please wait</font><br><font size=5px>Understanding the code</font>";
         setTimeout(function () {
             document.getElementById('Terminal').innerHTML = "This is Hacking code<br>being hacked";
-        }, 3000);
+        }, 1000);
         setTimeout(function () {
-            document.getElementById('Terminal').innerHTML = "End hacking!";
+            document.getElementById('Terminal').innerHTML = "-----------------------------";
+        }, 1000);
+        setTimeout(function () {
+            document.getElementById('Terminal').innerHTML = "□□□□-------------------------";
+        }, 1000);
+        setTimeout(function () {
+            document.getElementById('Terminal').innerHTML = "□□□□□□□□□□□□-----------------";
+        }, 1000);
+        setTimeout(function () {
+            document.getElementById('Terminal').innerHTML = "□□□□□□□□□□□□□□□□□□□□□□□□□□□□□";
+        }, 1000);
+        setTimeout(function () {
+            document.getElementById('Terminal').innerHTML = "End Hacking";
         }, 3000);
     }
     if (count < codes.length && co < 10 && co > 0) {
@@ -17,9 +29,9 @@ window.addEventListener("keydown", e => {
         var code = codes[count]
         document.getElementById('Terminal').append(code);
         count++;
-    }else {
+    } else {
         count = 0;
-        co ++;
+        co++;
     }
 });
 var count = 0;
