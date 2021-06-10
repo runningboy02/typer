@@ -10,19 +10,19 @@ window.addEventListener("keydown", e => {
         }, 1000);
         setTimeout(function () {
             document.getElementById('Terminal').innerHTML = "-----------------------------";
-        }, 1000);
+        }, 2000);
         setTimeout(function () {
             document.getElementById('Terminal').innerHTML = "□□□□-------------------------";
-        }, 1000);
+        }, 2000);
         setTimeout(function () {
             document.getElementById('Terminal').innerHTML = "□□□□□□□□□□□□-----------------";
-        }, 1000);
+        }, 2000);
         setTimeout(function () {
             document.getElementById('Terminal').innerHTML = "□□□□□□□□□□□□□□□□□□□□□□□□□□□□□";
-        }, 1000);
+        }, 2000);
         setTimeout(function () {
             document.getElementById('Terminal').innerHTML = "End Hacking";
-        }, 3000);
+        }, 2000);
     }
     if (count < codes.length && co < 10 && co > 0) {
         location.href = "#sb";
