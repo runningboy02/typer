@@ -1,14 +1,21 @@
+var co = 0;
 window.addEventListener("keydown", e => {
+    if (co == 0) {
+        document.getElementById('Terminal').innerHTML = "";
+        co++;
+    }
     if (count < codes.length) {
+        location.href = "#sb";
         var code = codes[count]
-        document.getElementById('Terminal').innerHTML = (code);
-        location.href = "#scrollbottom";
+        document.getElementById('Terminal').append(code);
         count++;
     } else {
         count = 0;
+        co++;
     }
 });
 var count = 0;
+var pop = [];
 
 var codes = [
     "struct group_info init_groups = { .usage = ATOMIC_INIT(2) };", "struct group_info *groups_alloc(int gidsetsize){", "struct group_info *group_info;", "int nblocks;", "int i;",
