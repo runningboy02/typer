@@ -1,17 +1,22 @@
 var co = 0;
 window.addEventListener("keydown", e => {
     if (co == 0) {
-        document.getElementById('Terminal').innerHTML = "";
+        document.getElementById('Terminal').innerHTML = ("Please enter the code<br>");
         co++;
+    } else if (co > 10) {
+        document.getElementById('Terminal').innerHTML = "<font size=10px>Please wait</font><br><font size=5px>Understanding the code</font>";
+        setTimeout(function () {
+            document.getElementById('Terminal').innerHTML = "This is Hacking code<br>being hacked";
+        }, 3000);
     }
-    if (count < codes.length) {
+    if (count < codes.length && co < 10 && co > 0) {
         location.href = "#sb";
         var code = codes[count]
         document.getElementById('Terminal').append(code);
         count++;
-    } else {
+    }else {
         count = 0;
-        co++;
+        co ++;
     }
 });
 var count = 0;
